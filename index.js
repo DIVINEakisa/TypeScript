@@ -12,4 +12,15 @@ function addNewPizza(pizzaOb) {
   menu.push(pizzaOb);
   return menu;
 }
-console.log(addNewPizza({ name: "Pepp", price: 20 }));
+// console.log(addNewPizza({ name: "Pepp", price: 20 }));
+
+function placeOrder(pizzaName) {
+  for (let pizzaobj of menu) {
+    let obj = Object.keys(pizzaobj).forEach((value) => console.log(value));
+    console.log(obj);
+    let value = Object.entries(pizzaobj).forEach((val) => console.log(val));
+    console.log(value);
+  }
+  return;
+}
+console.log(placeOrder());
