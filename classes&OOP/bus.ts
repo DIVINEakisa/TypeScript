@@ -1,3 +1,7 @@
+//  Write a TypeScript class called
+//  Bus with the properties make, model,
+//   and year.Add a method start() that prints a
+//  message indicating that the Bus is starting.
 class Bus {
   make: string;
   model: string;
