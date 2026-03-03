@@ -6,13 +6,17 @@
 // takes only name, assuming the roll number is unknown.
 class Student {
   name: string;
-  roll_number: number;
+  roll_number: number | undefined;
+
   constructor(name: string);
-  constructor(roll_number: unknown);
   constructor(name: string, roll_number: number);
-  constructor(name: string, roll_number: number) {
+  constructor(name: string, roll_number?: number) {
     this.name = name;
-    this.roll_number = roll_number;
+    if (roll_number !== undefined) {
+      this.roll_number = roll_number;
+    }
   }
 }
 let student = new Student("Divine");
+console.log(student.name);
+// console.log(student.roll_number);
